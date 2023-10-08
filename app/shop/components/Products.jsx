@@ -22,7 +22,7 @@ export default function Products({ product, handleAddToCart, cart, setCart }) {
             </div>
             <button
                 className='py-2 bg-teal-600 text-white hover:bg-teal-800 w-full absolute bottom-0 border border-t-0'
-                onClick={() => setCart([...cart, product])}
+                onClick={() => handleAddToCart(product)}
             >Add to cart
             </button>
         </div>
